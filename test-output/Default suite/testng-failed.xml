@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.CricBuzz">
+      <class name="testCases.WebTable">
         <methods>
-          <include name="testSLvsBan"/>
+          <include name="testChampionFinal" invocation-numbers="0 1 2 3"/>
+          <include name="closeBrowser"/>
         </methods>
-      </class> <!-- testCases.CricBuzz -->
+      </class> <!-- testCases.WebTable -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
