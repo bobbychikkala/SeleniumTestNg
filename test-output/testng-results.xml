@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-20T15:20:38 IST" name="Default suite" finished-at="2025-06-20T15:21:19 IST" duration-ms="40926">
+  <suite started-at="2025-06-21T19:00:44 IST" name="Default suite" finished-at="2025-06-21T19:01:02 IST" duration-ms="17692">
     <groups>
     </groups>
-    <test started-at="2025-06-20T15:20:38 IST" name="Default test" finished-at="2025-06-20T15:21:19 IST" duration-ms="40926">
+    <test started-at="2025-06-21T19:00:44 IST" name="Default test" finished-at="2025-06-21T19:01:02 IST" duration-ms="17692">
       <class name="testCases.WebTable">
-        <test-method signature="testCricketScore(java.lang.String,java.lang.String)[pri:1, instance:testCases.WebTable@5f6722d3]" started-at="2025-06-20T15:20:38 IST" name="testCricketScore" data-provider="inningNo" finished-at="2025-06-20T15:21:04 IST" duration-ms="26124" status="PASS">
+        <test-method signature="testCricketScore(java.lang.String,java.lang.String)[pri:1, instance:testCases.WebTable@5f6722d3]" started-at="2025-06-21T19:00:44 IST" name="testCricketScore" data-provider="inningNo" finished-at="2025-06-21T19:00:49 IST" duration-ms="4968" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,7 +23,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCricketScore -->
-        <test-method signature="testCricketScore(java.lang.String,java.lang.String)[pri:1, instance:testCases.WebTable@5f6722d3]" started-at="2025-06-20T15:21:04 IST" name="testCricketScore" data-provider="inningNo" finished-at="2025-06-20T15:21:08 IST" duration-ms="3530" status="PASS">
+        <test-method signature="testCricketScore(java.lang.String,java.lang.String)[pri:1, instance:testCases.WebTable@5f6722d3]" started-at="2025-06-21T19:00:49 IST" name="testCricketScore" data-provider="inningNo" finished-at="2025-06-21T19:00:52 IST" duration-ms="2258" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -39,7 +39,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCricketScore -->
-        <test-method signature="testCricketScore(java.lang.String,java.lang.String)[pri:1, instance:testCases.WebTable@5f6722d3]" started-at="2025-06-20T15:21:08 IST" name="testCricketScore" data-provider="inningNo" finished-at="2025-06-20T15:21:11 IST" duration-ms="3143" status="PASS">
+        <test-method signature="testCricketScore(java.lang.String,java.lang.String)[pri:1, instance:testCases.WebTable@5f6722d3]" started-at="2025-06-21T19:00:52 IST" name="testCricketScore" data-provider="inningNo" finished-at="2025-06-21T19:00:55 IST" duration-ms="3159" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -55,7 +55,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCricketScore -->
-        <test-method signature="testCricketScore(java.lang.String,java.lang.String)[pri:1, instance:testCases.WebTable@5f6722d3]" started-at="2025-06-20T15:21:11 IST" name="testCricketScore" data-provider="inningNo" finished-at="2025-06-20T15:21:13 IST" duration-ms="2072" status="PASS">
+        <test-method signature="testCricketScore(java.lang.String,java.lang.String)[pri:1, instance:testCases.WebTable@5f6722d3]" started-at="2025-06-21T19:00:55 IST" name="testCricketScore" data-provider="inningNo" finished-at="2025-06-21T19:00:57 IST" duration-ms="2014" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -71,7 +71,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCricketScore -->
-        <test-method signature="testCricketScore(java.lang.String,java.lang.String)[pri:1, instance:testCases.WebTable@5f6722d3]" started-at="2025-06-20T15:21:13 IST" name="testCricketScore" data-provider="inningNo" finished-at="2025-06-20T15:21:15 IST" duration-ms="2328" status="PASS">
+        <test-method signature="testCricketScore(java.lang.String,java.lang.String)[pri:1, instance:testCases.WebTable@5f6722d3]" started-at="2025-06-21T19:00:57 IST" name="testCricketScore" data-provider="inningNo" finished-at="2025-06-21T19:00:59 IST" duration-ms="1814" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -87,7 +87,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCricketScore -->
-        <test-method signature="testCricketScore(java.lang.String,java.lang.String)[pri:1, instance:testCases.WebTable@5f6722d3]" started-at="2025-06-20T15:21:15 IST" name="testCricketScore" data-provider="inningNo" finished-at="2025-06-20T15:21:17 IST" duration-ms="1984" status="PASS">
+        <test-method signature="testCricketScore(java.lang.String,java.lang.String)[pri:1, instance:testCases.WebTable@5f6722d3]" started-at="2025-06-21T19:00:59 IST" name="testCricketScore" data-provider="inningNo" finished-at="2025-06-21T19:01:00 IST" duration-ms="1801" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -103,7 +103,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCricketScore -->
-        <test-method signature="testCricketScore(java.lang.String,java.lang.String)[pri:1, instance:testCases.WebTable@5f6722d3]" started-at="2025-06-20T15:21:17 IST" name="testCricketScore" data-provider="inningNo" finished-at="2025-06-20T15:21:19 IST" duration-ms="1215" status="PASS">
+        <test-method signature="testCricketScore(java.lang.String,java.lang.String)[pri:1, instance:testCases.WebTable@5f6722d3]" started-at="2025-06-21T19:01:00 IST" name="testCricketScore" data-provider="inningNo" finished-at="2025-06-21T19:01:02 IST" duration-ms="1282" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -119,7 +119,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCricketScore -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.WebTable@5f6722d3]" started-at="2025-06-20T15:21:19 IST" name="closeBrowser" finished-at="2025-06-20T15:21:19 IST" duration-ms="484" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.WebTable@5f6722d3]" started-at="2025-06-21T19:01:02 IST" name="closeBrowser" finished-at="2025-06-21T19:01:02 IST" duration-ms="356" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

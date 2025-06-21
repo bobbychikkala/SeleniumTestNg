@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.WebTable">
+      <class name="testCases.AmazonTest">
         <methods>
-          <include name="testChampionFinal" invocation-numbers="0 1 2 3"/>
-          <include name="closeBrowser"/>
+          <include name="testSearch"/>
         </methods>
-      </class> <!-- testCases.WebTable -->
+      </class> <!-- testCases.AmazonTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -6,7 +6,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -45,7 +44,7 @@ public class WebTable {
 				String data =driver.findElement(By.xpath(commonXpath+"/div["+r+"]/div["+c+"]")).getText();
 				System.out.print(data);
 				
-				if(c<2) for(int e=0;e<29-data.length();e++)System.out.print(" ");
+				if(c<2) for(int e=0;e<30-data.length();e++)System.out.print(" ");
 				
 				else if(c==2) for(int d=0;d<45-data.length();d++)System.out.print(" ");
 		
