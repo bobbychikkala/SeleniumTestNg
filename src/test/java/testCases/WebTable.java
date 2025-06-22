@@ -2,6 +2,7 @@ package testCases;
 
 import java.time.Duration;
 
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -35,8 +36,9 @@ public class WebTable {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		String commonXpath ="//div[@id='"+innings+"']/div[1]";
-		int batsmen = driver.findElements(By.xpath("//div[@id='"+innings+"']/div[1]/div/div[1]/a")).size();
-		int column = driver.findElements(By.xpath("//div[@id='"+innings+"']/div[1]/div[3]/div")).size();
+		int batsmen = driver.findElements(By.xpath(commonXpath+"/div/div[1]/a")).size();
+		int column = driver.findElements(By.xpath(commonXpath+"/div[3]/div")).size();
+		
 
 		for (int r=2 ; r<=batsmen+2;r++) {		
 			for(int c=1;c<column;c++) {
