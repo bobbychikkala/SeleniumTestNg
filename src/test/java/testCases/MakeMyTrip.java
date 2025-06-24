@@ -13,7 +13,6 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-
 public class MakeMyTrip {
 	static WebDriver driver = new ChromeDriver();
 	@BeforeTest
@@ -29,25 +28,15 @@ public class MakeMyTrip {
 		driver.quit();
 	}
 
-	@DataProvider(name ="data")
-	public String[][] getData(){
-		return new String [][] {
-			{"Hyderabad","Bengaluru"},
-			{"Bengaluru","Hyderabad"},
-			{"Bengaluru","Dubai"},
-			{"Chennai","Delhi"},
-			{"Mumbai","Delhi"}
-		};
-	}
 
-	@Test(dataProvider ="data")
+	@Test(dataProvider ="cities")
 	public void testLeastPrice(String from,String to) {
 		driver.findElement(By.id("fromCity")).sendKeys(from);
 		driver.findElement(By.xpath("//*[@class='makeFlex column flexOne']")).click();
 		driver.findElement(By.id("toCity")).sendKeys(to);
 		driver.findElement(By.xpath("//*[@class='makeFlex column flexOne']")).click();
 
-		int leastPrice = Integer.MAX_VALUE;		
+		int leastPrice = Integer.MAX_VALUE;		//27456566677
 		String leastPriceofDate="";
 		String priceXpath ="//*[@class=' todayPrice']";
 		List<WebElement> prices = driver.findElements(By.xpath(priceXpath));
@@ -55,17 +44,30 @@ public class MakeMyTrip {
 		HashMap<String,Integer> priceWithDates = new HashMap<String,Integer>();
 		System.out.println();
 		for (int i=1 ; i<prices.size();i++){
-			int price =Integer.parseInt(prices.get(i).getText().replace(",", ""));
+			int price =Integer.parseInt(prices.get(i).getText().replace(",", ""));//3000
 			String eachDate = dates.get(i).getDomAttribute("aria-label");
 			priceWithDates.put(eachDate, price); // this is extra --storing date and price in dictionary
-			if (price<=leastPrice) {
+			if (price<leastPrice) {
 				leastPrice =price ;
 				leastPriceofDate = eachDate;
 			}
+			
 		}
 		System.out.println("From "+from +" to "+to + " Flights");
 		System.out.println("Cheapest flight Price is :"+leastPrice);
 		System.out.println("Dated on " +leastPriceofDate);
 	}
 
+	
+	@DataProvider(name ="cities")
+	public String[][] getData(){
+		return new String [][] {
+			{"Hyderabad","Bengaluru"},
+			{"Bengaluru","Hyderabad"},
+			{"Bengaluru","Dubai"},
+			{"Chennai","Delhi"},
+			{"Mumbai","Delhi"},
+			{"Kolkata","Delhi"}
+		};
+	}
 }

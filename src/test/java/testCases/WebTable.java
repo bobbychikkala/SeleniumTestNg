@@ -33,11 +33,13 @@ public class WebTable {
 	public  void testCricketScore(String inning,String url) {
 		driver.get(url);
 		innings=inning;
+		String batemsName ;
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		String commonXpath ="//div[@id='"+innings+"']/div[1]";
 		int batsmen = driver.findElements(By.xpath(commonXpath+"/div/div[1]/a")).size();
 		int column = driver.findElements(By.xpath(commonXpath+"/div[3]/div")).size();
+		
 		
 
 		for (int r=2 ; r<=batsmen+2;r++) {		

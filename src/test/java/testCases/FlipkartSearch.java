@@ -1,12 +1,15 @@
 package testCases;
 import java.time.Duration;
 import java.util.List;
-
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.SkipException;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
@@ -20,7 +23,7 @@ public class FlipkartSearch {
 	@DataProvider(name="data")
 	public String[][]getData(){
 		return new String [][] {
-			{"Samsung Phone"},{"iPhone"}
+			{"Samsung phone"}
 		};
 	}
 
@@ -34,21 +37,27 @@ public class FlipkartSearch {
 	
 	@AfterTest
 	public void closingBrowser() {
-		driver.quit();
+		//driver.quit();
 	}
 	
 	@Test(dataProvider="data")
-	public void testSerachItem(String itemToBeSearch)  {
-		int highestDisc =Integer.MIN_VALUE;
+	public void testSerachItem(String itemToBeSearch) throws InterruptedException  {
+
+		int highestDisc =0;
 		String targetProduct="";
 		String productOfferPrice="";
 		String productPrice= "";
 
 		WebElement searchInputBox =driver.findElement(By.xpath("//*[@name='q']"));
-		searchInputBox.clear();	
+		
+		searchInputBox.sendKeys(Keys.chord(Keys.CONTROL,"a", Keys.DELETE));
+		
 		searchInputBox.sendKeys(itemToBeSearch);
-		searchInputBox.submit();
-		List <WebElement>itemsIDs=driver.findElements(By.xpath("//div[@data-id]"));
+	
+		searchInputBox.sendKeys(Keys.ENTER);
+		List <WebElement>itemsIDs=waitForVisibilityOfElement(driver,By.xpath("//div[@data-id]"),10);
+		
+		
 		for(int i=0; i<itemsIDs.size();i++) {
 			String itemID =itemsIDs.get(i).getAttribute("data-id");
 			System.out.println();
@@ -82,4 +91,11 @@ public class FlipkartSearch {
 		System.out.println("Highest Discount Product");
 		System.out.println(targetProduct+"\n   " +productOfferPrice+"\n   "+productPrice);
 	}
+	
+	public static List<WebElement> waitForVisibilityOfElement(WebDriver driver, By locator, int timeoutInSeconds) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds));
+        return wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(locator));
+    }
+	
+	
 }
