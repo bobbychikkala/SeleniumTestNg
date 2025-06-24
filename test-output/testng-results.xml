@@ -1,129 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-21T19:00:44 IST" name="Default suite" finished-at="2025-06-21T19:01:02 IST" duration-ms="17692">
+  <suite started-at="2025-06-24T22:55:18 IST" name="Default suite" finished-at="2025-06-24T22:55:32 IST" duration-ms="14709">
     <groups>
     </groups>
-    <test started-at="2025-06-21T19:00:44 IST" name="Default test" finished-at="2025-06-21T19:01:02 IST" duration-ms="17692">
-      <class name="testCases.WebTable">
-        <test-method signature="testCricketScore(java.lang.String,java.lang.String)[pri:1, instance:testCases.WebTable@5f6722d3]" started-at="2025-06-21T19:00:44 IST" name="testCricketScore" data-provider="inningNo" finished-at="2025-06-21T19:00:49 IST" duration-ms="4968" status="PASS">
+    <test started-at="2025-06-24T22:55:18 IST" name="Default test" finished-at="2025-06-24T22:55:32 IST" duration-ms="14709">
+      <class name="testCases.MakeMyTrip">
+        <test-method is-config="true" signature="launchingBrowser()[pri:0, instance:testCases.MakeMyTrip@732f29af]" started-at="2025-06-24T22:55:18 IST" name="launchingBrowser" finished-at="2025-06-24T22:55:20 IST" duration-ms="1932" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchingBrowser -->
+        <test-method signature="testLeastPrice(java.lang.String,java.lang.String)[pri:0, instance:testCases.MakeMyTrip@732f29af]" started-at="2025-06-24T22:55:20 IST" name="testLeastPrice" data-provider="cities" finished-at="2025-06-24T22:55:21 IST" duration-ms="1947" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[innings_1]]>
+                <![CDATA[Hyderabad]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[https://www.cricbuzz.com/live-cricket-scorecard/106673/rsa-vs-aus-final-icc-world-test-championship-final-2025]]>
+                <![CDATA[Bengaluru]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCricketScore -->
-        <test-method signature="testCricketScore(java.lang.String,java.lang.String)[pri:1, instance:testCases.WebTable@5f6722d3]" started-at="2025-06-21T19:00:49 IST" name="testCricketScore" data-provider="inningNo" finished-at="2025-06-21T19:00:52 IST" duration-ms="2258" status="PASS">
+        </test-method> <!-- testLeastPrice -->
+        <test-method signature="testLeastPrice(java.lang.String,java.lang.String)[pri:0, instance:testCases.MakeMyTrip@732f29af]" started-at="2025-06-24T22:55:21 IST" name="testLeastPrice" data-provider="cities" finished-at="2025-06-24T22:55:23 IST" duration-ms="1879" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[innings_2]]>
+                <![CDATA[Bengaluru]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[https://www.cricbuzz.com/live-cricket-scorecard/106673/rsa-vs-aus-final-icc-world-test-championship-final-2025]]>
+                <![CDATA[Hyderabad]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCricketScore -->
-        <test-method signature="testCricketScore(java.lang.String,java.lang.String)[pri:1, instance:testCases.WebTable@5f6722d3]" started-at="2025-06-21T19:00:52 IST" name="testCricketScore" data-provider="inningNo" finished-at="2025-06-21T19:00:55 IST" duration-ms="3159" status="PASS">
+        </test-method> <!-- testLeastPrice -->
+        <test-method signature="testLeastPrice(java.lang.String,java.lang.String)[pri:0, instance:testCases.MakeMyTrip@732f29af]" started-at="2025-06-24T22:55:23 IST" name="testLeastPrice" data-provider="cities" finished-at="2025-06-24T22:55:26 IST" duration-ms="2178" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[innings_3]]>
+                <![CDATA[Bengaluru]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[https://www.cricbuzz.com/live-cricket-scorecard/106673/rsa-vs-aus-final-icc-world-test-championship-final-2025]]>
+                <![CDATA[Dubai]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCricketScore -->
-        <test-method signature="testCricketScore(java.lang.String,java.lang.String)[pri:1, instance:testCases.WebTable@5f6722d3]" started-at="2025-06-21T19:00:55 IST" name="testCricketScore" data-provider="inningNo" finished-at="2025-06-21T19:00:57 IST" duration-ms="2014" status="PASS">
+        </test-method> <!-- testLeastPrice -->
+        <test-method signature="testLeastPrice(java.lang.String,java.lang.String)[pri:0, instance:testCases.MakeMyTrip@732f29af]" started-at="2025-06-24T22:55:26 IST" name="testLeastPrice" data-provider="cities" finished-at="2025-06-24T22:55:28 IST" duration-ms="2301" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[innings_4]]>
+                <![CDATA[Chennai]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[https://www.cricbuzz.com/live-cricket-scorecard/106673/rsa-vs-aus-final-icc-world-test-championship-final-2025]]>
+                <![CDATA[Delhi]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCricketScore -->
-        <test-method signature="testCricketScore(java.lang.String,java.lang.String)[pri:1, instance:testCases.WebTable@5f6722d3]" started-at="2025-06-21T19:00:57 IST" name="testCricketScore" data-provider="inningNo" finished-at="2025-06-21T19:00:59 IST" duration-ms="1814" status="PASS">
+        </test-method> <!-- testLeastPrice -->
+        <test-method signature="testLeastPrice(java.lang.String,java.lang.String)[pri:0, instance:testCases.MakeMyTrip@732f29af]" started-at="2025-06-24T22:55:28 IST" name="testLeastPrice" data-provider="cities" finished-at="2025-06-24T22:55:30 IST" duration-ms="2097" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[innings_1]]>
+                <![CDATA[Mumbai]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[https://www.cricbuzz.com/live-cricket-scorecard/118586/sl-vs-ban-1st-test-bangladesh-tour-of-sri-lanka-2025]]>
+                <![CDATA[Delhi]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCricketScore -->
-        <test-method signature="testCricketScore(java.lang.String,java.lang.String)[pri:1, instance:testCases.WebTable@5f6722d3]" started-at="2025-06-21T19:00:59 IST" name="testCricketScore" data-provider="inningNo" finished-at="2025-06-21T19:01:00 IST" duration-ms="1801" status="PASS">
+        </test-method> <!-- testLeastPrice -->
+        <test-method signature="testLeastPrice(java.lang.String,java.lang.String)[pri:0, instance:testCases.MakeMyTrip@732f29af]" started-at="2025-06-24T22:55:30 IST" name="testLeastPrice" data-provider="cities" finished-at="2025-06-24T22:55:32 IST" duration-ms="1974" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[innings_2]]>
+                <![CDATA[Kolkata]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[https://www.cricbuzz.com/live-cricket-scorecard/118586/sl-vs-ban-1st-test-bangladesh-tour-of-sri-lanka-2025]]>
+                <![CDATA[Delhi]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCricketScore -->
-        <test-method signature="testCricketScore(java.lang.String,java.lang.String)[pri:1, instance:testCases.WebTable@5f6722d3]" started-at="2025-06-21T19:01:00 IST" name="testCricketScore" data-provider="inningNo" finished-at="2025-06-21T19:01:02 IST" duration-ms="1282" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[innings_3]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://www.cricbuzz.com/live-cricket-scorecard/118586/sl-vs-ban-1st-test-bangladesh-tour-of-sri-lanka-2025]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- testLeastPrice -->
+        <test-method is-config="true" signature="closingBrowser()[pri:0, instance:testCases.MakeMyTrip@732f29af]" started-at="2025-06-24T22:55:32 IST" name="closingBrowser" finished-at="2025-06-24T22:55:32 IST" duration-ms="320" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCricketScore -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.WebTable@5f6722d3]" started-at="2025-06-21T19:01:02 IST" name="closeBrowser" finished-at="2025-06-21T19:01:02 IST" duration-ms="356" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- testCases.WebTable -->
+        </test-method> <!-- closingBrowser -->
+      </class> <!-- testCases.MakeMyTrip -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
