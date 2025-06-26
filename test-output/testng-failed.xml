@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.FlipkartSearch">
+      <class name="utilities.Screenshot">
         <methods>
-          <include name="launchingBrowser"/>
-          <include name="closingBrowser"/>
-          <include name="testSerachItem" invocation-numbers="0"/>
+          <include name="takeSreenshot"/>
         </methods>
-      </class> <!-- testCases.FlipkartSearch -->
+      </class> <!-- utilities.Screenshot -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

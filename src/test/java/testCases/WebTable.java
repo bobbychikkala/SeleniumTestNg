@@ -33,7 +33,6 @@ public class WebTable {
 	public  void testCricketScore(String inning,String url) {
 		driver.get(url);
 		innings=inning;
-		String batemsName ;
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		String commonXpath ="//div[@id='"+innings+"']/div[1]";

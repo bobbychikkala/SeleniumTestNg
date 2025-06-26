@@ -9,10 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.SkipException;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -23,7 +20,7 @@ public class FlipkartSearch {
 	@DataProvider(name="data")
 	public String[][]getData(){
 		return new String [][] {
-			{"Samsung phone"}
+			{"Samsung phone"},{"iphone"}
 		};
 	}
 
@@ -32,17 +29,17 @@ public class FlipkartSearch {
 		driver = new ChromeDriver();
 		driver.get("https://www.flipkart.com/");
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		
 	}
 	
 	@AfterTest
 	public void closingBrowser() {
-		//driver.quit();
+		driver.quit();
 	}
 	
 	@Test(dataProvider="data")
 	public void testSerachItem(String itemToBeSearch) throws InterruptedException  {
-
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		int highestDisc =0;
 		String targetProduct="";
 		String productOfferPrice="";
@@ -55,9 +52,8 @@ public class FlipkartSearch {
 		searchInputBox.sendKeys(itemToBeSearch);
 	
 		searchInputBox.sendKeys(Keys.ENTER);
-		List <WebElement>itemsIDs=waitForVisibilityOfElement(driver,By.xpath("//div[@data-id]"),10);
 		
-		
+		List <WebElement>itemsIDs=waitForVisibilityOfElements(driver,By.xpath("//div[@data-id]"),20);		
 		for(int i=0; i<itemsIDs.size();i++) {
 			String itemID =itemsIDs.get(i).getAttribute("data-id");
 			System.out.println();
@@ -92,10 +88,15 @@ public class FlipkartSearch {
 		System.out.println(targetProduct+"\n   " +productOfferPrice+"\n   "+productPrice);
 	}
 	
-	public static List<WebElement> waitForVisibilityOfElement(WebDriver driver, By locator, int timeoutInSeconds) {
+	public static List<WebElement> waitForVisibilityOfElements(WebDriver driver, By locator, int timeoutInSeconds) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds));
-        return wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(locator));
+        return wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(locator));
     }
 	
+	@SuppressWarnings("unused")
+	private static WebElement waitForVisibilityOfElement(WebDriver driver,By locator ,int timeOutInSecond) {
+		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeOutInSecond));
+		 return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+	}
 	
 }
