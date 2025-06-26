@@ -28,7 +28,7 @@ public class MakeMyTrip {
 
 	@AfterTest
 	public void closingBrowser() { 
-		//driver.quit();
+		driver.quit();
 	}
 
 
@@ -59,7 +59,7 @@ public class MakeMyTrip {
 			}
 			
 		}
-		Screenshot.takeSreenshot(driver,from+"to"+to);
+		Screenshot.takeSreenshot(driver,"testMMT");
 		System.out.println("From "+from +" to "+to + " Flights");
 		System.out.println("Cheapest flight Price is :"+leastPrice);
 		System.out.println("Dated on " +leastPriceofDate);
