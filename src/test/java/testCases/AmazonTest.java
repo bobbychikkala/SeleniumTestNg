@@ -23,7 +23,6 @@ public class AmazonTest {
 			driver.findElement(By.xpath("//*[@alt=\"Continue shopping\"]")).click();
 		}
 		catch (Exception e) {}
-
 		finally {
 			String mobileName = "iPhone";
 			driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']")).sendKeys(mobileName);
