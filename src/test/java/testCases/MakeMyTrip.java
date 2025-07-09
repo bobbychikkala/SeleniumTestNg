@@ -1,4 +1,5 @@
 package testCases;
+import org.testng.annotations.Test;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.HashMap;
@@ -12,7 +13,7 @@ import org.testng.annotations.AfterTest;
 
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
+
 
 import utilities.Screenshot;
 
@@ -44,10 +45,12 @@ public class MakeMyTrip {
 		String priceXpath ="//*[@class=' todayPrice']";
 		List<WebElement> prices = driver.findElements(By.xpath(priceXpath));
 		List<WebElement> dates = driver.findElements(By.xpath(priceXpath+"/../.."));
+		
 		HashMap<String,Integer> priceWithDates = new HashMap<String,Integer>();
 		System.out.println();
 		
 		for (int i=1 ; i<prices.size();i++){
+			
 			int price =Integer.parseInt(prices.get(i).getText().replace(",", ""));//3000
 			String eachDate = dates.get(i).getDomAttribute("aria-label");
 			priceWithDates.put(eachDate, price); // this is extra --storing date and price in dictionary
@@ -70,12 +73,13 @@ public class MakeMyTrip {
 	@DataProvider(name ="cities")
 	public String[][] getData(){
 		return new String [][] {
-			{"Hyderabad","Bengaluru"},
-			{"Bengaluru","Hyderabad"},
-			{"Bengaluru","Dubai"},
+			{"Hyderabad","Bengaluru"}, 
+			{"Bengaluru","Hyderabad"}, 
+			{"Bengaluru","Chennai"},	
 			{"Chennai","Delhi"},
-			{"Mumbai","Delhi"},
+			{"Mumbai","Delhi"}, 
 			{"Kolkata","Delhi"}
+				 
 		};
 	}
 }

@@ -1,5 +1,9 @@
 package testCases;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.time.Duration;
 
 
@@ -56,7 +60,7 @@ public class WebTable {
 			}
 			System.out.println();
 		}
-		Assert.assertTrue(true);
+		AssertJUnit.assertTrue(true);
 		//driver.quit();
 		System.out.println("===========================================================================================================");
 	
