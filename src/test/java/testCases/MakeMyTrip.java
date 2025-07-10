@@ -29,7 +29,6 @@ public class MakeMyTrip {
 
 	@AfterTest
 	public void closingBrowser() { 
-		
 		driver.quit();
 	}
 
