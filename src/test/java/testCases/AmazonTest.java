@@ -22,6 +22,7 @@ public class AmazonTest {
 		try {
 			driver.findElement(By.xpath("//*[@alt=\"Continue shopping\"]")).click();
 		}
+		
 		catch (Exception e) {}
 		finally {
 			String mobileName = "iPhone";
