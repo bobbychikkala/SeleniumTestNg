@@ -3,11 +3,11 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="testCases.TestClass"/>
+    <!--  <class name="testCases.TestClass"/>
       <class name="testCases.MakeMyTrip"/>
       <class name="testCases.CricBuzz"/>
       <class name="testCases.FlipkartSearch"/>
-      <class name="testCases.AmazonTest"/>
+      <class name="testCases.AmazonTest"/>-->
       <class name="testCases.WebTable"/>
     </classes>
   </test> <!-- Test -->

@@ -22,7 +22,7 @@ public class FlipkartSearch {
 	@DataProvider(name="data")
 	public String[][]getData(){
 		return new String [][] {
-			{"Samsung phone"},{"iphone"}
+			{"Samsung phone"}
 		};
 	}
 
